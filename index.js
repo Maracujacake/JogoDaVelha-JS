@@ -60,13 +60,13 @@ window.addEventListener('DOMContentLoaded', () => {
     const announce = (type) => { // constante que escreverá na tela os acontecimentos que definimos acima; vencedores e empate
         switch(type){
             case PLAYERO_WON:
-                announcer.innerHTML = 'Player <span class="playerO">O</span> Won';
+                announcer.innerHTML = 'O jogador <span class="playerO">O</span> venceu';
                 break;
             case PLAYERX_WON:
-                announcer.innerHTML = 'Player <span class="playerX">X</span> Won';
+                announcer.innerHTML = 'O jogador <span class="playerX">X</span> venceu';
                 break;
             case TIE:
-                announcer.innerText = 'Tie';
+                announcer.innerText = 'Empate';
         }
         announcer.classList.remove('hide');
     };
